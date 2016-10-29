@@ -11,7 +11,7 @@ fi
 
 echo "STARTING SERVER"
 
-exec ./start-server.sh -adminpassword GNUServer -servername GNUServer -nosteam -Xmx1024m -Xms1024m
+exec /root/mounted/start-server.sh -adminpassword GNUServer -servername GNUServer -nosteam -Xmx1024m -Xms1024m
 
 # Classic Casual
 # # exec ./srcds_run -game csgo -console -usercon +game_type 0 +game_mode 0 +mapgroup mg_active
