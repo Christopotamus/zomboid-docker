@@ -24,5 +24,6 @@ RUN       (echo "#!/bin/sh\ncd /etc/service/steamcmd\n./steamcmd.sh +runscript s
 ADD        ./run_server.sh /etc/service/steamcmd/run
 RUN       chmod +x ./run
 
+EXPOSE 16261-16270
 # Cleans up APT when done.
 RUN        apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
